@@ -8,7 +8,7 @@ SCRIPT
 Vagrant.configure("2") do |config|
         config.vm.define "Ubuntu1" do |conf|
           conf.vm.box = "ubuntu/trusty64"
-          conf.vm.hostname = "LychUbunty1"
+          conf.vm.hostname = "LychUbuntu1"
           conf.vm.network :private_network, ip: "192.168.10.11"
 
           conf.vm.provider :virtualbox do |vb|
@@ -24,7 +24,7 @@ end
 
         config.vm.define "Ubuntu2" do |conf|
           conf.vm.box = "ubuntu/trusty64"
-          conf.vm.hostname = "LychUbunty2"
+          conf.vm.hostname = "LychUbuntu2"
           conf.vm.network :private_network, ip: "192.168.10.12"
 
           conf.vm.provider :virtualbox do |vb|
